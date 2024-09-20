@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 Key refreshKey = UniqueKey();
@@ -13,7 +13,7 @@ Key refreshKey = UniqueKey();
 const platform = MethodChannel('com.example.myapp/release');
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
